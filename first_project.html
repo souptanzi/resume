@@ -4,88 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Урок 1 -->
-   <!-- <h1>Магомед-Али Гиланиевич</h1> 
-    <p>Я тот кто собирается разорвать всех в свере <strong>IT</strong> и не только
-    </p> 
-    Я люблю <em>учиться, набирать новые знания и путешествовать</em> -->
-    
-    <!-- Урок 2 -->
-    <img src="https://tlum.ru/uploads/acf9b4c619ae36dfda96804e60add447d3d8e99789fe95b76926b4756483388f.jpeg" alt="" width="200">
-    <h1>Магомед-Али Гиланиевич</h1> 
-    <p>Я студент онлайн школы по программированию <strong>Result School</strong>
-    </p> 
-    Я люблю <em>учиться, набирать новые знания и путешествовать</em> 
 
-    <h4>Список социальных сетей:</h4>
-    <a href="https://telegram.com" target="_blank">Telegram</a>
-    |
-    <a href="https://telegram.com" target="_blank"> Instagram</a>
-    |
-    <a href="https://telegram.com" target="_blank">Youtube</a>
+  <div class="container">
+
+  <div class="info">
+    <img src="https://illustrators.ru/uploads/illustration/image/1401097/%D0%98%D0%BB%D0%BE%D0%BE%D0%BD.jpg " alt="" class="avatar">
+      
+      <div class="info-text">
+        <h1>Магомед-Али Муцольгов</h1> 
+        
+        <p>Я студент онлайн школы по программированию <strong>Result School</strong></p> 
+        <p>Я люблю <em>учиться, набирать новые знания и путешествовать</em></p>
+
+        <h4>Список социальных сетей:</h4>
+        <a href="https://telegram.com" target="_blank">Telegram</a>
+        |
+        <a href="https://telegram.com" target="_blank"> Instagram</a>
+        |
+        <a href="https://telegram.com" target="_blank">Youtube</a>
+      </div>
+    </div>
 
      <!-- Урок 3 -->
-    <h2>
-        Мои хобби 
-    </h2>
-    <ol>
+     <div class="card bg-green">
+
+        <h2 class="">
+            Мои хобби 
+        </h2>
+        <ol class="list">
         <li>Путешествия</li>
         <li>Программирование</li>
         <li>Фигурное катание</li>
         <li>Бокс</li>
-    </ol>
-    
+        </ol>
+    </div>
+
     <!-- Урок 4 -->
+    <div class="card bg-red">
     <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>        
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Programmer</td>
-          <td>I know to code</td>
-          <td>2020 - сейчас</td>
-        </tr>
-        <tr>
-          <td>NTC</td>
-          <td>Freshman</td>
-          <td>2022 - сейчас</td>
-        </tr>
-        <tr>
-            <td>Result School</td>
-            <td>Student</td>
-            <td>2022 - сейчас</td>
-          </tr>
-      </tbody>
-    </table>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Programmer</td>
+                    <td>I know to code</td>
+                    <td>2020 - сейчас</td>
+                </tr>
 
-    <h2>Связаться со мной</h2>
-    <form action="">
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-      </div>
+                <tr>
+                    <td>NTC</td>
+                    <td>Freshman</td>
+                    <td>2022 - сейчас</td>
+                </tr>
 
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-      </div>
+                <tr>
+                    <td>Result School</td>
+                    <td>Student</td>
+                    <td>2022 - сейчас</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card bg-yellow">
+        <h2 class="">Мои курсы</h2>
+
+        <div class="ul">
+          <ul type="disc" class="link-list">
+            <li><a href="">Получение профессии Frontend Разработчика</a></li>
+            <li><a href="">Все курсы</a></li>
+          </ul>
+        </div>
+    </div>
+
      
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-      </div> 
-      <button type="submit">Отправить!</button>
-    </form>
+      
+      <form action="" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя">
+          </div>
+
+          <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email">
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        </div> 
+
+        <button class="btn" type="submit">Отправить!</button>
+      </form>
+  </div>
+
 </body>
 </html>
 
